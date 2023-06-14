@@ -33,9 +33,9 @@ export class App {
   }
 
   private initializeMiddleware(): void {
-    if (config.env !== 'development') {
+    // if (config.env !== 'development') {
       this.expressApplication.use(cors());
-    }
+    // }
 
     this.expressApplication.use(helmet());
     this.expressApplication.use(bodyParser.json());
